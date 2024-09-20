@@ -12,6 +12,12 @@ document.getElementById('btn-add-money')
             // console.log(balance, addMoney);
             const newBalance = balance + addMoney;
             document.getElementById('account-balance').innerText = newBalance;
+
+            //add to transaction hostory
+            const p = document.createElement('p')
+            p.innerText = `Added: ${addMoney} tk. balance: ${newBalance}`
+            // console.log(p)
+            document.getElementById('transection-container').appendChild(p);
         }
         else{
             alert('Failed to add money')

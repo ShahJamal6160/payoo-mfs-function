@@ -12,6 +12,14 @@ document.getElementById('btn-cash-out')
             // console.log(balance);
             const newBalance = balance - cashOut;
             document.getElementById('account-balance').innerText = newBalance;
+
+            const div = document.createElement('div');
+            div.classList.add('bg-yellow-300');
+            div.innerHTML = `
+                <h4 class ="text-2xl font-bold">cash out </h4>
+                <p>${cashOut} withdraw, new balance ${newBalance}</p>            
+            `
+            document.getElementById('transection-container').appendChild(div);
         }
         else{
             alert('no money for u')
