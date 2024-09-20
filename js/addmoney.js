@@ -17,6 +17,13 @@ document.getElementById('btn-add-money')
         
         const addMoney = getInputFieldValueById('input-add-money');
         const pinNumber = getInputFieldValueById('input-pin-number');
-        console.log('add money with parameter', addMoney, pinNumber);
+        // console.log('add money with parameter', addMoney, pinNumber);
+
+        if(pinNumber === 1234){
+            // console.log()
+        }
+        else{
+            alert('failed to add money')
+        }
 
     })
