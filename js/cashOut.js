@@ -7,6 +7,12 @@ document.getElementById('btn-cash-out')
         const pinNumber = getInputFieldValueById('input-cash-out-pin')
         // console.log('inside the click hendler', cashOut, pinNumber);
 
+        if(isNaN(cashOut)){
+            alert('Failed To add Money');
+            return;
+        }
+        
+
         if(pinNumber === 1234){
             const balance = getTextFieldVlueId('account-balance')
             // console.log(balance);

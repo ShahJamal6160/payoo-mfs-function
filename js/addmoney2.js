@@ -7,6 +7,12 @@ document.getElementById('btn-add-money')
         const pinNumber = getInputFieldValueById('input-pin-number');
         // console.log(pinNumber);
 
+        if(isNaN(addMoney)){
+            alert('Failed To Cash Out');
+            return;
+        }
+
+
         if(pinNumber === 1234){
             const balance = getTextFieldVlueId('account-balance');
             // console.log(balance, addMoney);
